@@ -116,8 +116,9 @@ def downscale_with_mosaic(image_file):
 
 
 def main():
-    if not os.path.exists(OUTPUT_DIR):
-        os.mkdir(OUTPUT_DIR)
+    for directory in [RAW_IMAGE_DIR, OUTPUT_DIR]:
+        if not os.path.exists(directory):
+            os.mkdir(directory)
     images = [fname for fname in os.listdir(RAW_IMAGE_DIR) if fname[-4:].lower() == ".jpg"]
     for image in images:
         downscale(os.path.join(RAW_IMAGE_DIR, image))

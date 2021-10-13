@@ -31,7 +31,7 @@ __author_email__ = "dwheeler1512@yahoo.com.au"
 __license__ = "MIT"
 __maintainer_email__ = "as above"
 __url__ = "https://github.com/wheeled/signboard"
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 
 setup(name="signboard",
